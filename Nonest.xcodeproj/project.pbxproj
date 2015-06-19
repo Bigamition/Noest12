@@ -1,0 +1,1119 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A664C77E1B14BA53005DC88F /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A664C77D1B14BA53005DC88F /* NavigationViewController.m */; };
+		A66698A818F92DE3006CD73E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66698A718F92DE3006CD73E /* TableViewController.m */; };
+		A66EABDB18D2AF9B00CDF938 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66EABDA18D2AF9B00CDF938 /* Foundation.framework */; };
+		A66EABDD18D2AF9B00CDF938 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66EABDC18D2AF9B00CDF938 /* CoreGraphics.framework */; };
+		A66EABDF18D2AF9B00CDF938 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66EABDE18D2AF9B00CDF938 /* UIKit.framework */; };
+		A66EABE518D2AF9B00CDF938 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A66EABE318D2AF9B00CDF938 /* InfoPlist.strings */; };
+		A66EABE718D2AF9B00CDF938 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A66EABE618D2AF9B00CDF938 /* main.m */; };
+		A66EABEB18D2AF9B00CDF938 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A66EABEA18D2AF9B00CDF938 /* AppDelegate.m */; };
+		A66EABEE18D2AF9B00CDF938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66EABEC18D2AF9B00CDF938 /* Main.storyboard */; };
+		A66EABF318D2AF9B00CDF938 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66EABF218D2AF9B00CDF938 /* Images.xcassets */; };
+		A66EABFA18D2AF9B00CDF938 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66EABF918D2AF9B00CDF938 /* XCTest.framework */; };
+		A66EABFB18D2AF9B00CDF938 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66EABDA18D2AF9B00CDF938 /* Foundation.framework */; };
+		A66EABFC18D2AF9B00CDF938 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66EABDE18D2AF9B00CDF938 /* UIKit.framework */; };
+		A66EAC0418D2AF9B00CDF938 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A66EAC0218D2AF9B00CDF938 /* InfoPlist.strings */; };
+		A66EAC0618D2AF9B00CDF938 /* NonestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A66EAC0518D2AF9B00CDF938 /* NonestTests.m */; };
+		A66EACF718D2B05C00CDF938 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66EACF618D2B05C00CDF938 /* Security.framework */; };
+		A66EACF918D2B06400CDF938 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66EACF818D2B06400CDF938 /* StoreKit.framework */; };
+		A66EACFB18D2B7A100CDF938 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66EACFA18D2B7A100CDF938 /* MobileCoreServices.framework */; };
+		A66EACFD18D2B7F500CDF938 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A66EACFC18D2B7F500CDF938 /* libxml2.dylib */; };
+		A680089A1920FD830089B9E5 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68008991920FD830089B9E5 /* CustomCell.xib */; };
+		A680089D1920FF0A0089B9E5 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A680089C1920FF0A0089B9E5 /* CustomTableViewCell.m */; };
+		A6B938D01B345B21008F86F4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B938C21B345B21008F86F4 /* SWRevealViewController.m */; };
+		A6D515CD1B1F2FDC002B4CB2 /* List 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D515CC1B1F2FDC002B4CB2 /* List 1@2x.png */; };
+		A6D515D51B1F3A80002B4CB2 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D515D41B1F3A80002B4CB2 /* UIViewController+ScrollingNavbar.m */; };
+		A6ECC06118F91C0300CC7BE3 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ECC06018F91C0300CC7BE3 /* WebViewController.m */; };
+		A6FC8C891B10CC7C0002C065 /* ENAFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8BEF1B10CC7C0002C065 /* ENAFURLConnectionOperation.m */; };
+		A6FC8C8A1B10CC7C0002C065 /* ENGCOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8BF21B10CC7C0002C065 /* ENGCOAuth.m */; };
+		A6FC8C8B1B10CC7C0002C065 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8BF31B10CC7C0002C065 /* LICENSE */; };
+		A6FC8C8C1B10CC7C0002C065 /* NSData+ENBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8BF51B10CC7C0002C065 /* NSData+ENBase64.m */; };
+		A6FC8C8D1B10CC7C0002C065 /* KSForwardingWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8BF81B10CC7C0002C065 /* KSForwardingWriter.m */; };
+		A6FC8C8E1B10CC7C0002C065 /* KSHTMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8BFA1B10CC7C0002C065 /* KSHTMLWriter.m */; };
+		A6FC8C8F1B10CC7C0002C065 /* KSWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8BFC1B10CC7C0002C065 /* KSWriter.m */; };
+		A6FC8C901B10CC7C0002C065 /* KSXMLAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8BFE1B10CC7C0002C065 /* KSXMLAttributes.m */; };
+		A6FC8C911B10CC7C0002C065 /* KSXMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C001B10CC7C0002C065 /* KSXMLWriter.m */; };
+		A6FC8C921B10CC7C0002C065 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C011B10CC7C0002C065 /* LICENSE.txt */; };
+		A6FC8C931B10CC7C0002C065 /* NSString+XMLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C031B10CC7C0002C065 /* NSString+XMLAdditions.m */; };
+		A6FC8C941B10CC7C0002C065 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C051B10CC7C0002C065 /* LICENSE */; };
+		A6FC8C951B10CC7C0002C065 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C071B10CC7C0002C065 /* NSString+URLEncoding.m */; };
+		A6FC8C961B10CC7C0002C065 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C091B10CC7C0002C065 /* LICENSE */; };
+		A6FC8C971B10CC7C0002C065 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C0B1B10CC7C0002C065 /* SSKeychain.m */; };
+		A6FC8C981B10CC7C0002C065 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C0D1B10CC7C0002C065 /* LICENSE */; };
+		A6FC8C991B10CC7C0002C065 /* TBinaryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C101B10CC7C0002C065 /* TBinaryProtocol.m */; };
+		A6FC8C9A1B10CC7C0002C065 /* TProtocolException.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C131B10CC7C0002C065 /* TProtocolException.m */; };
+		A6FC8C9B1B10CC7C0002C065 /* TProtocolUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C161B10CC7C0002C065 /* TProtocolUtil.m */; };
+		A6FC8C9C1B10CC7C0002C065 /* TApplicationException.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C181B10CC7C0002C065 /* TApplicationException.m */; };
+		A6FC8C9D1B10CC7C0002C065 /* TException.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C1A1B10CC7C0002C065 /* TException.m */; };
+		A6FC8C9E1B10CC7C0002C065 /* THTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C211B10CC7C0002C065 /* THTTPClient.m */; };
+		A6FC8C9F1B10CC7C0002C065 /* TMemoryBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C231B10CC7C0002C065 /* TMemoryBuffer.m */; };
+		A6FC8CA01B10CC7C0002C065 /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C261B10CC7C0002C065 /* TTransportException.m */; };
+		A6FC8CA11B10CC7C0002C065 /* EDAMErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C2A1B10CC7C0002C065 /* EDAMErrors.m */; };
+		A6FC8CA21B10CC7C0002C065 /* EDAMLimits.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C2C1B10CC7C0002C065 /* EDAMLimits.m */; };
+		A6FC8CA31B10CC7C0002C065 /* EDAMNoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C2E1B10CC7C0002C065 /* EDAMNoteStore.m */; };
+		A6FC8CA41B10CC7C0002C065 /* EDAMTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C301B10CC7C0002C065 /* EDAMTypes.m */; };
+		A6FC8CA51B10CC7C0002C065 /* EDAMUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C321B10CC7C0002C065 /* EDAMUserStore.m */; };
+		A6FC8CA61B10CC7C0002C065 /* EDAMNoteStoreClient+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C341B10CC7C0002C065 /* EDAMNoteStoreClient+Utilities.m */; };
+		A6FC8CA71B10CC7C0002C065 /* ENConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C361B10CC7C0002C065 /* ENConstants.m */; };
+		A6FC8CA81B10CC7C0002C065 /* EvernoteNoteStore+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C391B10CC7C0002C065 /* EvernoteNoteStore+Extras.m */; };
+		A6FC8CA91B10CC7C0002C065 /* EvernoteNoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C3B1B10CC7C0002C065 /* EvernoteNoteStore.m */; };
+		A6FC8CAA1B10CC7C0002C065 /* EvernoteSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C3D1B10CC7C0002C065 /* EvernoteSDK.m */; };
+		A6FC8CAB1B10CC7C0002C065 /* EvernoteSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C3F1B10CC7C0002C065 /* EvernoteSession.m */; };
+		A6FC8CAC1B10CC7C0002C065 /* EvernoteUserStore+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C411B10CC7C0002C065 /* EvernoteUserStore+Extras.m */; };
+		A6FC8CAD1B10CC7C0002C065 /* EvernoteUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C431B10CC7C0002C065 /* EvernoteUserStore.m */; };
+		A6FC8CAE1B10CC7C0002C065 /* ENApplicationBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C471B10CC7C0002C065 /* ENApplicationBridge.m */; };
+		A6FC8CAF1B10CC7C0002C065 /* ENAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C4B1B10CC7C0002C065 /* ENAuthenticationRequest.m */; };
+		A6FC8CB01B10CC7C0002C065 /* ENLinkNotebookRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C4D1B10CC7C0002C065 /* ENLinkNotebookRequest.m */; };
+		A6FC8CB11B10CC7C0002C065 /* ENNewNoteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C4F1B10CC7C0002C065 /* ENNewNoteRequest.m */; };
+		A6FC8CB21B10CC7C0002C065 /* ENNoteImportRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C511B10CC7C0002C065 /* ENNoteImportRequest.m */; };
+		A6FC8CB31B10CC7C0002C065 /* ENNoteViewRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C531B10CC7C0002C065 /* ENNoteViewRequest.m */; };
+		A6FC8CB41B10CC7C0002C065 /* ENResourceAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C551B10CC7C0002C065 /* ENResourceAttachment.m */; };
+		A6FC8CB51B10CC7C0002C065 /* ENSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C571B10CC7C0002C065 /* ENSearchRequest.m */; };
+		A6FC8CB61B10CC7C0002C065 /* .htaccess in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C5A1B10CC7C0002C065 /* .htaccess */; };
+		A6FC8CB71B10CC7C0002C065 /* enml.dtd in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C5B1B10CC7C0002C065 /* enml.dtd */; };
+		A6FC8CB81B10CC7C0002C065 /* enml2.dtd in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C5C1B10CC7C0002C065 /* enml2.dtd */; };
+		A6FC8CB91B10CC7C0002C065 /* evernote-export.dtd in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C5D1B10CC7C0002C065 /* evernote-export.dtd */; };
+		A6FC8CBA1B10CC7C0002C065 /* index.php in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C5E1B10CC7C0002C065 /* index.php */; };
+		A6FC8CBB1B10CC7C0002C065 /* promotions.dtd in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C5F1B10CC7C0002C065 /* promotions.dtd */; };
+		A6FC8CBC1B10CC7C0002C065 /* recoIndex.dtd in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C601B10CC7C0002C065 /* recoIndex.dtd */; };
+		A6FC8CBD1B10CC7C0002C065 /* xhtml-lat1.ent in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C611B10CC7C0002C065 /* xhtml-lat1.ent */; };
+		A6FC8CBE1B10CC7C0002C065 /* xhtml-special.ent in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C621B10CC7C0002C065 /* xhtml-special.ent */; };
+		A6FC8CBF1B10CC7C0002C065 /* xhtml-symbol.ent in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C631B10CC7C0002C065 /* xhtml-symbol.ent */; };
+		A6FC8CC01B10CC7C0002C065 /* xhtml1-strict.dtd in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C641B10CC7C0002C065 /* xhtml1-strict.dtd */; };
+		A6FC8CC11B10CC7C0002C065 /* xhtml1-transitional.dtd in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C651B10CC7C0002C065 /* xhtml1-transitional.dtd */; };
+		A6FC8CC21B10CC7C0002C065 /* ENAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C671B10CC7C0002C065 /* ENAPI.m */; };
+		A6FC8CC31B10CC7C0002C065 /* ENCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C691B10CC7C0002C065 /* ENCredentials.m */; };
+		A6FC8CC41B10CC7C0002C065 /* ENCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C6B1B10CC7C0002C065 /* ENCredentialStore.m */; };
+		A6FC8CC51B10CC7C0002C065 /* ENOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C6D1B10CC7C0002C065 /* ENOAuthViewController.m */; };
+		A6FC8CC61B10CC7C0002C065 /* EvernoteSDK.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8C6F1B10CC7C0002C065 /* EvernoteSDK.strings */; };
+		A6FC8CC71B10CC7C0002C065 /* ENMLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C721B10CC7C0002C065 /* ENMLUtility.m */; };
+		A6FC8CC81B10CC7C0002C065 /* ENEncryptedContentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C751B10CC7C0002C065 /* ENEncryptedContentInfo.m */; };
+		A6FC8CC91B10CC7C0002C065 /* ENMIMEUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C771B10CC7C0002C065 /* ENMIMEUtils.m */; };
+		A6FC8CCA1B10CC7C0002C065 /* ENMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C791B10CC7C0002C065 /* ENMLWriter.m */; };
+		A6FC8CCB1B10CC7C0002C065 /* ENXMLDTD.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C7B1B10CC7C0002C065 /* ENXMLDTD.m */; };
+		A6FC8CCC1B10CC7C0002C065 /* ENXMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C7E1B10CC7C0002C065 /* ENXMLWriter.m */; };
+		A6FC8CCD1B10CC7C0002C065 /* NSRegularExpression+ENAGRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C801B10CC7C0002C065 /* NSRegularExpression+ENAGRegex.m */; };
+		A6FC8CCE1B10CC7C0002C065 /* NSString+EDAMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C811B10CC7C0002C065 /* NSString+EDAMAdditions.m */; };
+		A6FC8CCF1B10CC7C0002C065 /* NSData+EvernoteSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C841B10CC7C0002C065 /* NSData+EvernoteSDK.m */; };
+		A6FC8CD01B10CC7C0002C065 /* NSDataBase64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C861B10CC7C0002C065 /* NSDataBase64Additions.m */; };
+		A6FC8CD11B10CC7C0002C065 /* NSDate+EDAMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8C881B10CC7C0002C065 /* NSDate+EDAMAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A66EABFD18D2AF9B00CDF938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A66EABCF18D2AF9B00CDF938 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A66EABD618D2AF9B00CDF938;
+			remoteInfo = Nonest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A664C77C1B14BA53005DC88F /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		A664C77D1B14BA53005DC88F /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		A66698A618F92DE3006CD73E /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		A66698A718F92DE3006CD73E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
+		A66EABD718D2AF9B00CDF938 /* Nonest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nonest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66EABDA18D2AF9B00CDF938 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A66EABDC18D2AF9B00CDF938 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A66EABDE18D2AF9B00CDF938 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A66EABE218D2AF9B00CDF938 /* Nonest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Nonest-Info.plist"; sourceTree = "<group>"; };
+		A66EABE418D2AF9B00CDF938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A66EABE618D2AF9B00CDF938 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A66EABE818D2AF9B00CDF938 /* Nonest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nonest-Prefix.pch"; sourceTree = "<group>"; };
+		A66EABE918D2AF9B00CDF938 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A66EABEA18D2AF9B00CDF938 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A66EABED18D2AF9B00CDF938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A66EABF218D2AF9B00CDF938 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A66EABF818D2AF9B00CDF938 /* NonestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NonestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66EABF918D2AF9B00CDF938 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A66EAC0118D2AF9B00CDF938 /* NonestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NonestTests-Info.plist"; sourceTree = "<group>"; };
+		A66EAC0318D2AF9B00CDF938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A66EAC0518D2AF9B00CDF938 /* NonestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NonestTests.m; sourceTree = "<group>"; };
+		A66EACF618D2B05C00CDF938 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A66EACF818D2B06400CDF938 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A66EACFA18D2B7A100CDF938 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A66EACFC18D2B7F500CDF938 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		A68008991920FD830089B9E5 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		A680089B1920FF0A0089B9E5 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		A680089C1920FF0A0089B9E5 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		A6B938C11B345B21008F86F4 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		A6B938C21B345B21008F86F4 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		A6D515CC1B1F2FDC002B4CB2 /* List 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "List 1@2x.png"; sourceTree = SOURCE_ROOT; };
+		A6D515D31B1F3A80002B4CB2 /* UIViewController+ScrollingNavbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ScrollingNavbar.h"; sourceTree = "<group>"; };
+		A6D515D41B1F3A80002B4CB2 /* UIViewController+ScrollingNavbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ScrollingNavbar.m"; sourceTree = "<group>"; };
+		A6ECC05F18F91C0300CC7BE3 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		A6ECC06018F91C0300CC7BE3 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		A6FC8BEE1B10CC7C0002C065 /* ENAFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENAFURLConnectionOperation.h; sourceTree = "<group>"; };
+		A6FC8BEF1B10CC7C0002C065 /* ENAFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENAFURLConnectionOperation.m; sourceTree = "<group>"; };
+		A6FC8BF11B10CC7C0002C065 /* ENGCOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENGCOAuth.h; sourceTree = "<group>"; };
+		A6FC8BF21B10CC7C0002C065 /* ENGCOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENGCOAuth.m; sourceTree = "<group>"; };
+		A6FC8BF31B10CC7C0002C065 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A6FC8BF41B10CC7C0002C065 /* NSData+ENBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ENBase64.h"; sourceTree = "<group>"; };
+		A6FC8BF51B10CC7C0002C065 /* NSData+ENBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ENBase64.m"; sourceTree = "<group>"; };
+		A6FC8BF71B10CC7C0002C065 /* KSForwardingWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSForwardingWriter.h; sourceTree = "<group>"; };
+		A6FC8BF81B10CC7C0002C065 /* KSForwardingWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSForwardingWriter.m; sourceTree = "<group>"; };
+		A6FC8BF91B10CC7C0002C065 /* KSHTMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSHTMLWriter.h; sourceTree = "<group>"; };
+		A6FC8BFA1B10CC7C0002C065 /* KSHTMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSHTMLWriter.m; sourceTree = "<group>"; };
+		A6FC8BFB1B10CC7C0002C065 /* KSWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSWriter.h; sourceTree = "<group>"; };
+		A6FC8BFC1B10CC7C0002C065 /* KSWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSWriter.m; sourceTree = "<group>"; };
+		A6FC8BFD1B10CC7C0002C065 /* KSXMLAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSXMLAttributes.h; sourceTree = "<group>"; };
+		A6FC8BFE1B10CC7C0002C065 /* KSXMLAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSXMLAttributes.m; sourceTree = "<group>"; };
+		A6FC8BFF1B10CC7C0002C065 /* KSXMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSXMLWriter.h; sourceTree = "<group>"; };
+		A6FC8C001B10CC7C0002C065 /* KSXMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSXMLWriter.m; sourceTree = "<group>"; };
+		A6FC8C011B10CC7C0002C065 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		A6FC8C021B10CC7C0002C065 /* NSString+XMLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLAdditions.h"; sourceTree = "<group>"; };
+		A6FC8C031B10CC7C0002C065 /* NSString+XMLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLAdditions.m"; sourceTree = "<group>"; };
+		A6FC8C051B10CC7C0002C065 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A6FC8C061B10CC7C0002C065 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		A6FC8C071B10CC7C0002C065 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		A6FC8C091B10CC7C0002C065 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A6FC8C0A1B10CC7C0002C065 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		A6FC8C0B1B10CC7C0002C065 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		A6FC8C0D1B10CC7C0002C065 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A6FC8C0F1B10CC7C0002C065 /* TBinaryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBinaryProtocol.h; sourceTree = "<group>"; };
+		A6FC8C101B10CC7C0002C065 /* TBinaryProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBinaryProtocol.m; sourceTree = "<group>"; };
+		A6FC8C111B10CC7C0002C065 /* TProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocol.h; sourceTree = "<group>"; };
+		A6FC8C121B10CC7C0002C065 /* TProtocolException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolException.h; sourceTree = "<group>"; };
+		A6FC8C131B10CC7C0002C065 /* TProtocolException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolException.m; sourceTree = "<group>"; };
+		A6FC8C141B10CC7C0002C065 /* TProtocolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolFactory.h; sourceTree = "<group>"; };
+		A6FC8C151B10CC7C0002C065 /* TProtocolUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolUtil.h; sourceTree = "<group>"; };
+		A6FC8C161B10CC7C0002C065 /* TProtocolUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolUtil.m; sourceTree = "<group>"; };
+		A6FC8C171B10CC7C0002C065 /* TApplicationException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TApplicationException.h; sourceTree = "<group>"; };
+		A6FC8C181B10CC7C0002C065 /* TApplicationException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TApplicationException.m; sourceTree = "<group>"; };
+		A6FC8C191B10CC7C0002C065 /* TException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TException.h; sourceTree = "<group>"; };
+		A6FC8C1A1B10CC7C0002C065 /* TException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TException.m; sourceTree = "<group>"; };
+		A6FC8C1B1B10CC7C0002C065 /* Thrift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thrift.h; sourceTree = "<group>"; };
+		A6FC8C1C1B10CC7C0002C065 /* TObjective-C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TObjective-C.h"; sourceTree = "<group>"; };
+		A6FC8C1D1B10CC7C0002C065 /* TProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessor.h; sourceTree = "<group>"; };
+		A6FC8C1E1B10CC7C0002C065 /* TProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessorFactory.h; sourceTree = "<group>"; };
+		A6FC8C201B10CC7C0002C065 /* THTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTTPClient.h; sourceTree = "<group>"; };
+		A6FC8C211B10CC7C0002C065 /* THTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTTPClient.m; sourceTree = "<group>"; };
+		A6FC8C221B10CC7C0002C065 /* TMemoryBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMemoryBuffer.h; sourceTree = "<group>"; };
+		A6FC8C231B10CC7C0002C065 /* TMemoryBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMemoryBuffer.m; sourceTree = "<group>"; };
+		A6FC8C241B10CC7C0002C065 /* TTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransport.h; sourceTree = "<group>"; };
+		A6FC8C251B10CC7C0002C065 /* TTransportException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransportException.h; sourceTree = "<group>"; };
+		A6FC8C261B10CC7C0002C065 /* TTransportException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTransportException.m; sourceTree = "<group>"; };
+		A6FC8C281B10CC7C0002C065 /* EDAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAM.h; sourceTree = "<group>"; };
+		A6FC8C291B10CC7C0002C065 /* EDAMErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMErrors.h; sourceTree = "<group>"; };
+		A6FC8C2A1B10CC7C0002C065 /* EDAMErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMErrors.m; sourceTree = "<group>"; };
+		A6FC8C2B1B10CC7C0002C065 /* EDAMLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMLimits.h; sourceTree = "<group>"; };
+		A6FC8C2C1B10CC7C0002C065 /* EDAMLimits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMLimits.m; sourceTree = "<group>"; };
+		A6FC8C2D1B10CC7C0002C065 /* EDAMNoteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteStore.h; sourceTree = "<group>"; };
+		A6FC8C2E1B10CC7C0002C065 /* EDAMNoteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteStore.m; sourceTree = "<group>"; };
+		A6FC8C2F1B10CC7C0002C065 /* EDAMTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMTypes.h; sourceTree = "<group>"; };
+		A6FC8C301B10CC7C0002C065 /* EDAMTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMTypes.m; sourceTree = "<group>"; };
+		A6FC8C311B10CC7C0002C065 /* EDAMUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMUserStore.h; sourceTree = "<group>"; };
+		A6FC8C321B10CC7C0002C065 /* EDAMUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMUserStore.m; sourceTree = "<group>"; };
+		A6FC8C331B10CC7C0002C065 /* EDAMNoteStoreClient+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EDAMNoteStoreClient+Utilities.h"; sourceTree = "<group>"; };
+		A6FC8C341B10CC7C0002C065 /* EDAMNoteStoreClient+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EDAMNoteStoreClient+Utilities.m"; sourceTree = "<group>"; };
+		A6FC8C351B10CC7C0002C065 /* ENConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENConstants.h; sourceTree = "<group>"; };
+		A6FC8C361B10CC7C0002C065 /* ENConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENConstants.m; sourceTree = "<group>"; };
+		A6FC8C371B10CC7C0002C065 /* evernote-sdk-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "evernote-sdk-ios-Prefix.pch"; sourceTree = "<group>"; };
+		A6FC8C381B10CC7C0002C065 /* EvernoteNoteStore+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EvernoteNoteStore+Extras.h"; sourceTree = "<group>"; };
+		A6FC8C391B10CC7C0002C065 /* EvernoteNoteStore+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EvernoteNoteStore+Extras.m"; sourceTree = "<group>"; };
+		A6FC8C3A1B10CC7C0002C065 /* EvernoteNoteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteNoteStore.h; sourceTree = "<group>"; };
+		A6FC8C3B1B10CC7C0002C065 /* EvernoteNoteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvernoteNoteStore.m; sourceTree = "<group>"; };
+		A6FC8C3C1B10CC7C0002C065 /* EvernoteSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteSDK.h; sourceTree = "<group>"; };
+		A6FC8C3D1B10CC7C0002C065 /* EvernoteSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvernoteSDK.m; sourceTree = "<group>"; };
+		A6FC8C3E1B10CC7C0002C065 /* EvernoteSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteSession.h; sourceTree = "<group>"; };
+		A6FC8C3F1B10CC7C0002C065 /* EvernoteSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvernoteSession.m; sourceTree = "<group>"; };
+		A6FC8C401B10CC7C0002C065 /* EvernoteUserStore+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EvernoteUserStore+Extras.h"; sourceTree = "<group>"; };
+		A6FC8C411B10CC7C0002C065 /* EvernoteUserStore+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EvernoteUserStore+Extras.m"; sourceTree = "<group>"; };
+		A6FC8C421B10CC7C0002C065 /* EvernoteUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteUserStore.h; sourceTree = "<group>"; };
+		A6FC8C431B10CC7C0002C065 /* EvernoteUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvernoteUserStore.m; sourceTree = "<group>"; };
+		A6FC8C461B10CC7C0002C065 /* ENApplicationBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENApplicationBridge.h; sourceTree = "<group>"; };
+		A6FC8C471B10CC7C0002C065 /* ENApplicationBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENApplicationBridge.m; sourceTree = "<group>"; };
+		A6FC8C481B10CC7C0002C065 /* ENApplicationBridge_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENApplicationBridge_Private.h; sourceTree = "<group>"; };
+		A6FC8C491B10CC7C0002C065 /* ENApplicationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENApplicationRequest.h; sourceTree = "<group>"; };
+		A6FC8C4A1B10CC7C0002C065 /* ENAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENAuthenticationRequest.h; sourceTree = "<group>"; };
+		A6FC8C4B1B10CC7C0002C065 /* ENAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENAuthenticationRequest.m; sourceTree = "<group>"; };
+		A6FC8C4C1B10CC7C0002C065 /* ENLinkNotebookRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENLinkNotebookRequest.h; sourceTree = "<group>"; };
+		A6FC8C4D1B10CC7C0002C065 /* ENLinkNotebookRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENLinkNotebookRequest.m; sourceTree = "<group>"; };
+		A6FC8C4E1B10CC7C0002C065 /* ENNewNoteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENNewNoteRequest.h; sourceTree = "<group>"; };
+		A6FC8C4F1B10CC7C0002C065 /* ENNewNoteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENNewNoteRequest.m; sourceTree = "<group>"; };
+		A6FC8C501B10CC7C0002C065 /* ENNoteImportRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENNoteImportRequest.h; sourceTree = "<group>"; };
+		A6FC8C511B10CC7C0002C065 /* ENNoteImportRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENNoteImportRequest.m; sourceTree = "<group>"; };
+		A6FC8C521B10CC7C0002C065 /* ENNoteViewRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENNoteViewRequest.h; sourceTree = "<group>"; };
+		A6FC8C531B10CC7C0002C065 /* ENNoteViewRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENNoteViewRequest.m; sourceTree = "<group>"; };
+		A6FC8C541B10CC7C0002C065 /* ENResourceAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENResourceAttachment.h; sourceTree = "<group>"; };
+		A6FC8C551B10CC7C0002C065 /* ENResourceAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENResourceAttachment.m; sourceTree = "<group>"; };
+		A6FC8C561B10CC7C0002C065 /* ENSearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENSearchRequest.h; sourceTree = "<group>"; };
+		A6FC8C571B10CC7C0002C065 /* ENSearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENSearchRequest.m; sourceTree = "<group>"; };
+		A6FC8C581B10CC7C0002C065 /* EvernoteBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteBridge.h; sourceTree = "<group>"; };
+		A6FC8C5A1B10CC7C0002C065 /* .htaccess */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .htaccess; sourceTree = "<group>"; };
+		A6FC8C5B1B10CC7C0002C065 /* enml.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = enml.dtd; sourceTree = "<group>"; };
+		A6FC8C5C1B10CC7C0002C065 /* enml2.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = enml2.dtd; sourceTree = "<group>"; };
+		A6FC8C5D1B10CC7C0002C065 /* evernote-export.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "evernote-export.dtd"; sourceTree = "<group>"; };
+		A6FC8C5E1B10CC7C0002C065 /* index.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = index.php; sourceTree = "<group>"; };
+		A6FC8C5F1B10CC7C0002C065 /* promotions.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = promotions.dtd; sourceTree = "<group>"; };
+		A6FC8C601B10CC7C0002C065 /* recoIndex.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = recoIndex.dtd; sourceTree = "<group>"; };
+		A6FC8C611B10CC7C0002C065 /* xhtml-lat1.ent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "xhtml-lat1.ent"; sourceTree = "<group>"; };
+		A6FC8C621B10CC7C0002C065 /* xhtml-special.ent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "xhtml-special.ent"; sourceTree = "<group>"; };
+		A6FC8C631B10CC7C0002C065 /* xhtml-symbol.ent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "xhtml-symbol.ent"; sourceTree = "<group>"; };
+		A6FC8C641B10CC7C0002C065 /* xhtml1-strict.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "xhtml1-strict.dtd"; sourceTree = "<group>"; };
+		A6FC8C651B10CC7C0002C065 /* xhtml1-transitional.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "xhtml1-transitional.dtd"; sourceTree = "<group>"; };
+		A6FC8C661B10CC7C0002C065 /* ENAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENAPI.h; sourceTree = "<group>"; };
+		A6FC8C671B10CC7C0002C065 /* ENAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENAPI.m; sourceTree = "<group>"; };
+		A6FC8C681B10CC7C0002C065 /* ENCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENCredentials.h; sourceTree = "<group>"; };
+		A6FC8C691B10CC7C0002C065 /* ENCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENCredentials.m; sourceTree = "<group>"; };
+		A6FC8C6A1B10CC7C0002C065 /* ENCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENCredentialStore.h; sourceTree = "<group>"; };
+		A6FC8C6B1B10CC7C0002C065 /* ENCredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENCredentialStore.m; sourceTree = "<group>"; };
+		A6FC8C6C1B10CC7C0002C065 /* ENOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENOAuthViewController.h; sourceTree = "<group>"; };
+		A6FC8C6D1B10CC7C0002C065 /* ENOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENOAuthViewController.m; sourceTree = "<group>"; };
+		A6FC8C6F1B10CC7C0002C065 /* EvernoteSDK.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = EvernoteSDK.strings; sourceTree = "<group>"; };
+		A6FC8C711B10CC7C0002C065 /* ENMLUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENMLUtility.h; sourceTree = "<group>"; };
+		A6FC8C721B10CC7C0002C065 /* ENMLUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENMLUtility.m; sourceTree = "<group>"; };
+		A6FC8C741B10CC7C0002C065 /* ENEncryptedContentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENEncryptedContentInfo.h; sourceTree = "<group>"; };
+		A6FC8C751B10CC7C0002C065 /* ENEncryptedContentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENEncryptedContentInfo.m; sourceTree = "<group>"; };
+		A6FC8C761B10CC7C0002C065 /* ENMIMEUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENMIMEUtils.h; sourceTree = "<group>"; };
+		A6FC8C771B10CC7C0002C065 /* ENMIMEUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENMIMEUtils.m; sourceTree = "<group>"; };
+		A6FC8C781B10CC7C0002C065 /* ENMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENMLWriter.h; sourceTree = "<group>"; };
+		A6FC8C791B10CC7C0002C065 /* ENMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENMLWriter.m; sourceTree = "<group>"; };
+		A6FC8C7A1B10CC7C0002C065 /* ENXMLDTD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENXMLDTD.h; sourceTree = "<group>"; };
+		A6FC8C7B1B10CC7C0002C065 /* ENXMLDTD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENXMLDTD.m; sourceTree = "<group>"; };
+		A6FC8C7C1B10CC7C0002C065 /* ENXMLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENXMLUtils.h; sourceTree = "<group>"; };
+		A6FC8C7D1B10CC7C0002C065 /* ENXMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENXMLWriter.h; sourceTree = "<group>"; };
+		A6FC8C7E1B10CC7C0002C065 /* ENXMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENXMLWriter.m; sourceTree = "<group>"; };
+		A6FC8C7F1B10CC7C0002C065 /* NSRegularExpression+ENAGRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+ENAGRegex.h"; sourceTree = "<group>"; };
+		A6FC8C801B10CC7C0002C065 /* NSRegularExpression+ENAGRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+ENAGRegex.m"; sourceTree = "<group>"; };
+		A6FC8C811B10CC7C0002C065 /* NSString+EDAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EDAMAdditions.m"; sourceTree = "<group>"; };
+		A6FC8C821B10CC7C0002C065 /* NSString+EDAMNilAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EDAMNilAdditions.h"; sourceTree = "<group>"; };
+		A6FC8C831B10CC7C0002C065 /* NSData+EvernoteSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+EvernoteSDK.h"; sourceTree = "<group>"; };
+		A6FC8C841B10CC7C0002C065 /* NSData+EvernoteSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+EvernoteSDK.m"; sourceTree = "<group>"; };
+		A6FC8C851B10CC7C0002C065 /* NSDataBase64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataBase64Additions.h; sourceTree = "<group>"; };
+		A6FC8C861B10CC7C0002C065 /* NSDataBase64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataBase64Additions.m; sourceTree = "<group>"; };
+		A6FC8C871B10CC7C0002C065 /* NSDate+EDAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+EDAMAdditions.h"; sourceTree = "<group>"; };
+		A6FC8C881B10CC7C0002C065 /* NSDate+EDAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+EDAMAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A66EABD418D2AF9B00CDF938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66EACFD18D2B7F500CDF938 /* libxml2.dylib in Frameworks */,
+				A66EACFB18D2B7A100CDF938 /* MobileCoreServices.framework in Frameworks */,
+				A66EACF918D2B06400CDF938 /* StoreKit.framework in Frameworks */,
+				A66EACF718D2B05C00CDF938 /* Security.framework in Frameworks */,
+				A66EABDD18D2AF9B00CDF938 /* CoreGraphics.framework in Frameworks */,
+				A66EABDF18D2AF9B00CDF938 /* UIKit.framework in Frameworks */,
+				A66EABDB18D2AF9B00CDF938 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66EABF518D2AF9B00CDF938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66EABFA18D2AF9B00CDF938 /* XCTest.framework in Frameworks */,
+				A66EABFC18D2AF9B00CDF938 /* UIKit.framework in Frameworks */,
+				A66EABFB18D2AF9B00CDF938 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A66EABCE18D2AF9B00CDF938 = {
+			isa = PBXGroup;
+			children = (
+				A6FC8BEB1B10CC7C0002C065 /* evernote-sdk-ios */,
+				A66EABE018D2AF9B00CDF938 /* Nonest */,
+				A66EABFF18D2AF9B00CDF938 /* NonestTests */,
+				A66EABD918D2AF9B00CDF938 /* Frameworks */,
+				A66EABD818D2AF9B00CDF938 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A66EABD818D2AF9B00CDF938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A66EABD718D2AF9B00CDF938 /* Nonest.app */,
+				A66EABF818D2AF9B00CDF938 /* NonestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A66EABD918D2AF9B00CDF938 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A66EACFC18D2B7F500CDF938 /* libxml2.dylib */,
+				A66EACFA18D2B7A100CDF938 /* MobileCoreServices.framework */,
+				A66EACF818D2B06400CDF938 /* StoreKit.framework */,
+				A66EACF618D2B05C00CDF938 /* Security.framework */,
+				A66EABDA18D2AF9B00CDF938 /* Foundation.framework */,
+				A66EABDC18D2AF9B00CDF938 /* CoreGraphics.framework */,
+				A66EABDE18D2AF9B00CDF938 /* UIKit.framework */,
+				A66EABF918D2AF9B00CDF938 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A66EABE018D2AF9B00CDF938 /* Nonest */ = {
+			isa = PBXGroup;
+			children = (
+				A66EABE918D2AF9B00CDF938 /* AppDelegate.h */,
+				A66EABEA18D2AF9B00CDF938 /* AppDelegate.m */,
+				A66EABEC18D2AF9B00CDF938 /* Main.storyboard */,
+				A664C77C1B14BA53005DC88F /* NavigationViewController.h */,
+				A664C77D1B14BA53005DC88F /* NavigationViewController.m */,
+				A66698A618F92DE3006CD73E /* TableViewController.h */,
+				A66698A718F92DE3006CD73E /* TableViewController.m */,
+				A6ECC05F18F91C0300CC7BE3 /* WebViewController.h */,
+				A6ECC06018F91C0300CC7BE3 /* WebViewController.m */,
+				A68008991920FD830089B9E5 /* CustomCell.xib */,
+				A680089B1920FF0A0089B9E5 /* CustomTableViewCell.h */,
+				A680089C1920FF0A0089B9E5 /* CustomTableViewCell.m */,
+				A66EABF218D2AF9B00CDF938 /* Images.xcassets */,
+				A66EABE118D2AF9B00CDF938 /* Supporting Files */,
+			);
+			path = Nonest;
+			sourceTree = "<group>";
+		};
+		A66EABE118D2AF9B00CDF938 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6B938C01B345B21008F86F4 /* SlideOutMenuFiles */,
+				A6D515D21B1F3A80002B4CB2 /* AMScrollingNavbar */,
+				A6D515CC1B1F2FDC002B4CB2 /* List 1@2x.png */,
+				A66EABE218D2AF9B00CDF938 /* Nonest-Info.plist */,
+				A66EABE318D2AF9B00CDF938 /* InfoPlist.strings */,
+				A66EABE818D2AF9B00CDF938 /* Nonest-Prefix.pch */,
+				A66EABE618D2AF9B00CDF938 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A66EABFF18D2AF9B00CDF938 /* NonestTests */ = {
+			isa = PBXGroup;
+			children = (
+				A66EAC0518D2AF9B00CDF938 /* NonestTests.m */,
+				A66EAC0018D2AF9B00CDF938 /* Supporting Files */,
+			);
+			path = NonestTests;
+			sourceTree = "<group>";
+		};
+		A66EAC0018D2AF9B00CDF938 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A66EAC0118D2AF9B00CDF938 /* NonestTests-Info.plist */,
+				A66EAC0218D2AF9B00CDF938 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6B938C01B345B21008F86F4 /* SlideOutMenuFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A6B938C11B345B21008F86F4 /* SWRevealViewController.h */,
+				A6B938C21B345B21008F86F4 /* SWRevealViewController.m */,
+			);
+			name = SlideOutMenuFiles;
+			path = ../SlideOutMenu/SlideOutMenuFiles;
+			sourceTree = "<group>";
+		};
+		A6D515D21B1F3A80002B4CB2 /* AMScrollingNavbar */ = {
+			isa = PBXGroup;
+			children = (
+				A6D515D31B1F3A80002B4CB2 /* UIViewController+ScrollingNavbar.h */,
+				A6D515D41B1F3A80002B4CB2 /* UIViewController+ScrollingNavbar.m */,
+			);
+			path = AMScrollingNavbar;
+			sourceTree = SOURCE_ROOT;
+		};
+		A6FC8BEB1B10CC7C0002C065 /* evernote-sdk-ios */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8BEC1B10CC7C0002C065 /* 3rdParty */,
+				A6FC8C271B10CC7C0002C065 /* EDAM */,
+				A6FC8C331B10CC7C0002C065 /* EDAMNoteStoreClient+Utilities.h */,
+				A6FC8C341B10CC7C0002C065 /* EDAMNoteStoreClient+Utilities.m */,
+				A6FC8C351B10CC7C0002C065 /* ENConstants.h */,
+				A6FC8C361B10CC7C0002C065 /* ENConstants.m */,
+				A6FC8C371B10CC7C0002C065 /* evernote-sdk-ios-Prefix.pch */,
+				A6FC8C381B10CC7C0002C065 /* EvernoteNoteStore+Extras.h */,
+				A6FC8C391B10CC7C0002C065 /* EvernoteNoteStore+Extras.m */,
+				A6FC8C3A1B10CC7C0002C065 /* EvernoteNoteStore.h */,
+				A6FC8C3B1B10CC7C0002C065 /* EvernoteNoteStore.m */,
+				A6FC8C3C1B10CC7C0002C065 /* EvernoteSDK.h */,
+				A6FC8C3D1B10CC7C0002C065 /* EvernoteSDK.m */,
+				A6FC8C3E1B10CC7C0002C065 /* EvernoteSession.h */,
+				A6FC8C3F1B10CC7C0002C065 /* EvernoteSession.m */,
+				A6FC8C401B10CC7C0002C065 /* EvernoteUserStore+Extras.h */,
+				A6FC8C411B10CC7C0002C065 /* EvernoteUserStore+Extras.m */,
+				A6FC8C421B10CC7C0002C065 /* EvernoteUserStore.h */,
+				A6FC8C431B10CC7C0002C065 /* EvernoteUserStore.m */,
+				A6FC8C441B10CC7C0002C065 /* internal */,
+				A6FC8C701B10CC7C0002C065 /* Utilities */,
+			);
+			name = "evernote-sdk-ios";
+			path = "evernote-sdk-ios-master/evernote-sdk-ios";
+			sourceTree = "<group>";
+		};
+		A6FC8BEC1B10CC7C0002C065 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8BED1B10CC7C0002C065 /* AFNetworking */,
+				A6FC8BF01B10CC7C0002C065 /* cocoa-oauth */,
+				A6FC8BF61B10CC7C0002C065 /* KSHTMLWriter */,
+				A6FC8C041B10CC7C0002C065 /* NSString+URLEncoding */,
+				A6FC8C081B10CC7C0002C065 /* SSKeychain */,
+				A6FC8C0C1B10CC7C0002C065 /* Thrift */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		A6FC8BED1B10CC7C0002C065 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8BEE1B10CC7C0002C065 /* ENAFURLConnectionOperation.h */,
+				A6FC8BEF1B10CC7C0002C065 /* ENAFURLConnectionOperation.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		A6FC8BF01B10CC7C0002C065 /* cocoa-oauth */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8BF11B10CC7C0002C065 /* ENGCOAuth.h */,
+				A6FC8BF21B10CC7C0002C065 /* ENGCOAuth.m */,
+				A6FC8BF31B10CC7C0002C065 /* LICENSE */,
+				A6FC8BF41B10CC7C0002C065 /* NSData+ENBase64.h */,
+				A6FC8BF51B10CC7C0002C065 /* NSData+ENBase64.m */,
+			);
+			path = "cocoa-oauth";
+			sourceTree = "<group>";
+		};
+		A6FC8BF61B10CC7C0002C065 /* KSHTMLWriter */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8BF71B10CC7C0002C065 /* KSForwardingWriter.h */,
+				A6FC8BF81B10CC7C0002C065 /* KSForwardingWriter.m */,
+				A6FC8BF91B10CC7C0002C065 /* KSHTMLWriter.h */,
+				A6FC8BFA1B10CC7C0002C065 /* KSHTMLWriter.m */,
+				A6FC8BFB1B10CC7C0002C065 /* KSWriter.h */,
+				A6FC8BFC1B10CC7C0002C065 /* KSWriter.m */,
+				A6FC8BFD1B10CC7C0002C065 /* KSXMLAttributes.h */,
+				A6FC8BFE1B10CC7C0002C065 /* KSXMLAttributes.m */,
+				A6FC8BFF1B10CC7C0002C065 /* KSXMLWriter.h */,
+				A6FC8C001B10CC7C0002C065 /* KSXMLWriter.m */,
+				A6FC8C011B10CC7C0002C065 /* LICENSE.txt */,
+				A6FC8C021B10CC7C0002C065 /* NSString+XMLAdditions.h */,
+				A6FC8C031B10CC7C0002C065 /* NSString+XMLAdditions.m */,
+			);
+			path = KSHTMLWriter;
+			sourceTree = "<group>";
+		};
+		A6FC8C041B10CC7C0002C065 /* NSString+URLEncoding */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8C051B10CC7C0002C065 /* LICENSE */,
+				A6FC8C061B10CC7C0002C065 /* NSString+URLEncoding.h */,
+				A6FC8C071B10CC7C0002C065 /* NSString+URLEncoding.m */,
+			);
+			path = "NSString+URLEncoding";
+			sourceTree = "<group>";
+		};
+		A6FC8C081B10CC7C0002C065 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8C091B10CC7C0002C065 /* LICENSE */,
+				A6FC8C0A1B10CC7C0002C065 /* SSKeychain.h */,
+				A6FC8C0B1B10CC7C0002C065 /* SSKeychain.m */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+		A6FC8C0C1B10CC7C0002C065 /* Thrift */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8C0D1B10CC7C0002C065 /* LICENSE */,
+				A6FC8C0E1B10CC7C0002C065 /* protocol */,
+				A6FC8C171B10CC7C0002C065 /* TApplicationException.h */,
+				A6FC8C181B10CC7C0002C065 /* TApplicationException.m */,
+				A6FC8C191B10CC7C0002C065 /* TException.h */,
+				A6FC8C1A1B10CC7C0002C065 /* TException.m */,
+				A6FC8C1B1B10CC7C0002C065 /* Thrift.h */,
+				A6FC8C1C1B10CC7C0002C065 /* TObjective-C.h */,
+				A6FC8C1D1B10CC7C0002C065 /* TProcessor.h */,
+				A6FC8C1E1B10CC7C0002C065 /* TProcessorFactory.h */,
+				A6FC8C1F1B10CC7C0002C065 /* transport */,
+			);
+			path = Thrift;
+			sourceTree = "<group>";
+		};
+		A6FC8C0E1B10CC7C0002C065 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8C0F1B10CC7C0002C065 /* TBinaryProtocol.h */,
+				A6FC8C101B10CC7C0002C065 /* TBinaryProtocol.m */,
+				A6FC8C111B10CC7C0002C065 /* TProtocol.h */,
+				A6FC8C121B10CC7C0002C065 /* TProtocolException.h */,
+				A6FC8C131B10CC7C0002C065 /* TProtocolException.m */,
+				A6FC8C141B10CC7C0002C065 /* TProtocolFactory.h */,
+				A6FC8C151B10CC7C0002C065 /* TProtocolUtil.h */,
+				A6FC8C161B10CC7C0002C065 /* TProtocolUtil.m */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		A6FC8C1F1B10CC7C0002C065 /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8C201B10CC7C0002C065 /* THTTPClient.h */,
+				A6FC8C211B10CC7C0002C065 /* THTTPClient.m */,
+				A6FC8C221B10CC7C0002C065 /* TMemoryBuffer.h */,
+				A6FC8C231B10CC7C0002C065 /* TMemoryBuffer.m */,
+				A6FC8C241B10CC7C0002C065 /* TTransport.h */,
+				A6FC8C251B10CC7C0002C065 /* TTransportException.h */,
+				A6FC8C261B10CC7C0002C065 /* TTransportException.m */,
+			);
+			path = transport;
+			sourceTree = "<group>";
+		};
+		A6FC8C271B10CC7C0002C065 /* EDAM */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8C281B10CC7C0002C065 /* EDAM.h */,
+				A6FC8C291B10CC7C0002C065 /* EDAMErrors.h */,
+				A6FC8C2A1B10CC7C0002C065 /* EDAMErrors.m */,
+				A6FC8C2B1B10CC7C0002C065 /* EDAMLimits.h */,
+				A6FC8C2C1B10CC7C0002C065 /* EDAMLimits.m */,
+				A6FC8C2D1B10CC7C0002C065 /* EDAMNoteStore.h */,
+				A6FC8C2E1B10CC7C0002C065 /* EDAMNoteStore.m */,
+				A6FC8C2F1B10CC7C0002C065 /* EDAMTypes.h */,
+				A6FC8C301B10CC7C0002C065 /* EDAMTypes.m */,
+				A6FC8C311B10CC7C0002C065 /* EDAMUserStore.h */,
+				A6FC8C321B10CC7C0002C065 /* EDAMUserStore.m */,
+			);
+			path = EDAM;
+			sourceTree = "<group>";
+		};
+		A6FC8C441B10CC7C0002C065 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8C451B10CC7C0002C065 /* Bridge */,
+				A6FC8C591B10CC7C0002C065 /* DTDs */,
+				A6FC8C661B10CC7C0002C065 /* ENAPI.h */,
+				A6FC8C671B10CC7C0002C065 /* ENAPI.m */,
+				A6FC8C681B10CC7C0002C065 /* ENCredentials.h */,
+				A6FC8C691B10CC7C0002C065 /* ENCredentials.m */,
+				A6FC8C6A1B10CC7C0002C065 /* ENCredentialStore.h */,
+				A6FC8C6B1B10CC7C0002C065 /* ENCredentialStore.m */,
+				A6FC8C6C1B10CC7C0002C065 /* ENOAuthViewController.h */,
+				A6FC8C6D1B10CC7C0002C065 /* ENOAuthViewController.m */,
+				A6FC8C6E1B10CC7C0002C065 /* Resources */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		A6FC8C451B10CC7C0002C065 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8C461B10CC7C0002C065 /* ENApplicationBridge.h */,
+				A6FC8C471B10CC7C0002C065 /* ENApplicationBridge.m */,
+				A6FC8C481B10CC7C0002C065 /* ENApplicationBridge_Private.h */,
+				A6FC8C491B10CC7C0002C065 /* ENApplicationRequest.h */,
+				A6FC8C4A1B10CC7C0002C065 /* ENAuthenticationRequest.h */,
+				A6FC8C4B1B10CC7C0002C065 /* ENAuthenticationRequest.m */,
+				A6FC8C4C1B10CC7C0002C065 /* ENLinkNotebookRequest.h */,
+				A6FC8C4D1B10CC7C0002C065 /* ENLinkNotebookRequest.m */,
+				A6FC8C4E1B10CC7C0002C065 /* ENNewNoteRequest.h */,
+				A6FC8C4F1B10CC7C0002C065 /* ENNewNoteRequest.m */,
+				A6FC8C501B10CC7C0002C065 /* ENNoteImportRequest.h */,
+				A6FC8C511B10CC7C0002C065 /* ENNoteImportRequest.m */,
+				A6FC8C521B10CC7C0002C065 /* ENNoteViewRequest.h */,
+				A6FC8C531B10CC7C0002C065 /* ENNoteViewRequest.m */,
+				A6FC8C541B10CC7C0002C065 /* ENResourceAttachment.h */,
+				A6FC8C551B10CC7C0002C065 /* ENResourceAttachment.m */,
+				A6FC8C561B10CC7C0002C065 /* ENSearchRequest.h */,
+				A6FC8C571B10CC7C0002C065 /* ENSearchRequest.m */,
+				A6FC8C581B10CC7C0002C065 /* EvernoteBridge.h */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		A6FC8C591B10CC7C0002C065 /* DTDs */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8C5A1B10CC7C0002C065 /* .htaccess */,
+				A6FC8C5B1B10CC7C0002C065 /* enml.dtd */,
+				A6FC8C5C1B10CC7C0002C065 /* enml2.dtd */,
+				A6FC8C5D1B10CC7C0002C065 /* evernote-export.dtd */,
+				A6FC8C5E1B10CC7C0002C065 /* index.php */,
+				A6FC8C5F1B10CC7C0002C065 /* promotions.dtd */,
+				A6FC8C601B10CC7C0002C065 /* recoIndex.dtd */,
+				A6FC8C611B10CC7C0002C065 /* xhtml-lat1.ent */,
+				A6FC8C621B10CC7C0002C065 /* xhtml-special.ent */,
+				A6FC8C631B10CC7C0002C065 /* xhtml-symbol.ent */,
+				A6FC8C641B10CC7C0002C065 /* xhtml1-strict.dtd */,
+				A6FC8C651B10CC7C0002C065 /* xhtml1-transitional.dtd */,
+			);
+			path = DTDs;
+			sourceTree = "<group>";
+		};
+		A6FC8C6E1B10CC7C0002C065 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8C6F1B10CC7C0002C065 /* EvernoteSDK.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A6FC8C701B10CC7C0002C065 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8C711B10CC7C0002C065 /* ENMLUtility.h */,
+				A6FC8C721B10CC7C0002C065 /* ENMLUtility.m */,
+				A6FC8C731B10CC7C0002C065 /* ENMLWriter */,
+				A6FC8C831B10CC7C0002C065 /* NSData+EvernoteSDK.h */,
+				A6FC8C841B10CC7C0002C065 /* NSData+EvernoteSDK.m */,
+				A6FC8C851B10CC7C0002C065 /* NSDataBase64Additions.h */,
+				A6FC8C861B10CC7C0002C065 /* NSDataBase64Additions.m */,
+				A6FC8C871B10CC7C0002C065 /* NSDate+EDAMAdditions.h */,
+				A6FC8C881B10CC7C0002C065 /* NSDate+EDAMAdditions.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A6FC8C731B10CC7C0002C065 /* ENMLWriter */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC8C741B10CC7C0002C065 /* ENEncryptedContentInfo.h */,
+				A6FC8C751B10CC7C0002C065 /* ENEncryptedContentInfo.m */,
+				A6FC8C761B10CC7C0002C065 /* ENMIMEUtils.h */,
+				A6FC8C771B10CC7C0002C065 /* ENMIMEUtils.m */,
+				A6FC8C781B10CC7C0002C065 /* ENMLWriter.h */,
+				A6FC8C791B10CC7C0002C065 /* ENMLWriter.m */,
+				A6FC8C7A1B10CC7C0002C065 /* ENXMLDTD.h */,
+				A6FC8C7B1B10CC7C0002C065 /* ENXMLDTD.m */,
+				A6FC8C7C1B10CC7C0002C065 /* ENXMLUtils.h */,
+				A6FC8C7D1B10CC7C0002C065 /* ENXMLWriter.h */,
+				A6FC8C7E1B10CC7C0002C065 /* ENXMLWriter.m */,
+				A6FC8C7F1B10CC7C0002C065 /* NSRegularExpression+ENAGRegex.h */,
+				A6FC8C801B10CC7C0002C065 /* NSRegularExpression+ENAGRegex.m */,
+				A6FC8C811B10CC7C0002C065 /* NSString+EDAMAdditions.m */,
+				A6FC8C821B10CC7C0002C065 /* NSString+EDAMNilAdditions.h */,
+			);
+			path = ENMLWriter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A66EABD618D2AF9B00CDF938 /* Nonest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A66EAC0918D2AF9B00CDF938 /* Build configuration list for PBXNativeTarget "Nonest" */;
+			buildPhases = (
+				A66EABD318D2AF9B00CDF938 /* Sources */,
+				A66EABD418D2AF9B00CDF938 /* Frameworks */,
+				A66EABD518D2AF9B00CDF938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nonest;
+			productName = Nonest;
+			productReference = A66EABD718D2AF9B00CDF938 /* Nonest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A66EABF718D2AF9B00CDF938 /* NonestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A66EAC0C18D2AF9B00CDF938 /* Build configuration list for PBXNativeTarget "NonestTests" */;
+			buildPhases = (
+				A66EABF418D2AF9B00CDF938 /* Sources */,
+				A66EABF518D2AF9B00CDF938 /* Frameworks */,
+				A66EABF618D2AF9B00CDF938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A66EABFE18D2AF9B00CDF938 /* PBXTargetDependency */,
+			);
+			name = NonestTests;
+			productName = NonestTests;
+			productReference = A66EABF818D2AF9B00CDF938 /* NonestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A66EABCF18D2AF9B00CDF938 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "細田 大志";
+				TargetAttributes = {
+					A66EABF718D2AF9B00CDF938 = {
+						TestTargetID = A66EABD618D2AF9B00CDF938;
+					};
+				};
+			};
+			buildConfigurationList = A66EABD218D2AF9B00CDF938 /* Build configuration list for PBXProject "Nonest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A66EABCE18D2AF9B00CDF938;
+			productRefGroup = A66EABD818D2AF9B00CDF938 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A66EABD618D2AF9B00CDF938 /* Nonest */,
+				A66EABF718D2AF9B00CDF938 /* NonestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A66EABD518D2AF9B00CDF938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FC8C921B10CC7C0002C065 /* LICENSE.txt in Resources */,
+				A6FC8CB71B10CC7C0002C065 /* enml.dtd in Resources */,
+				A66EABF318D2AF9B00CDF938 /* Images.xcassets in Resources */,
+				A6FC8CBD1B10CC7C0002C065 /* xhtml-lat1.ent in Resources */,
+				A6FC8C961B10CC7C0002C065 /* LICENSE in Resources */,
+				A66EABE518D2AF9B00CDF938 /* InfoPlist.strings in Resources */,
+				A6FC8CB81B10CC7C0002C065 /* enml2.dtd in Resources */,
+				A6D515CD1B1F2FDC002B4CB2 /* List 1@2x.png in Resources */,
+				A6FC8CBE1B10CC7C0002C065 /* xhtml-special.ent in Resources */,
+				A6FC8C941B10CC7C0002C065 /* LICENSE in Resources */,
+				A6FC8CBB1B10CC7C0002C065 /* promotions.dtd in Resources */,
+				A6FC8CBC1B10CC7C0002C065 /* recoIndex.dtd in Resources */,
+				A680089A1920FD830089B9E5 /* CustomCell.xib in Resources */,
+				A6FC8C981B10CC7C0002C065 /* LICENSE in Resources */,
+				A6FC8CB61B10CC7C0002C065 /* .htaccess in Resources */,
+				A66EABEE18D2AF9B00CDF938 /* Main.storyboard in Resources */,
+				A6FC8CC11B10CC7C0002C065 /* xhtml1-transitional.dtd in Resources */,
+				A6FC8C8B1B10CC7C0002C065 /* LICENSE in Resources */,
+				A6FC8CB91B10CC7C0002C065 /* evernote-export.dtd in Resources */,
+				A6FC8CBF1B10CC7C0002C065 /* xhtml-symbol.ent in Resources */,
+				A6FC8CC61B10CC7C0002C065 /* EvernoteSDK.strings in Resources */,
+				A6FC8CBA1B10CC7C0002C065 /* index.php in Resources */,
+				A6FC8CC01B10CC7C0002C065 /* xhtml1-strict.dtd in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66EABF618D2AF9B00CDF938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66EAC0418D2AF9B00CDF938 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A66EABD318D2AF9B00CDF938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FC8CC91B10CC7C0002C065 /* ENMIMEUtils.m in Sources */,
+				A6FC8CAB1B10CC7C0002C065 /* EvernoteSession.m in Sources */,
+				A6FC8C951B10CC7C0002C065 /* NSString+URLEncoding.m in Sources */,
+				A6FC8C9D1B10CC7C0002C065 /* TException.m in Sources */,
+				A6FC8CA81B10CC7C0002C065 /* EvernoteNoteStore+Extras.m in Sources */,
+				A6D515D51B1F3A80002B4CB2 /* UIViewController+ScrollingNavbar.m in Sources */,
+				A6FC8CAD1B10CC7C0002C065 /* EvernoteUserStore.m in Sources */,
+				A6FC8CB41B10CC7C0002C065 /* ENResourceAttachment.m in Sources */,
+				A6FC8CC71B10CC7C0002C065 /* ENMLUtility.m in Sources */,
+				A6FC8C9B1B10CC7C0002C065 /* TProtocolUtil.m in Sources */,
+				A6FC8CD11B10CC7C0002C065 /* NSDate+EDAMAdditions.m in Sources */,
+				A6ECC06118F91C0300CC7BE3 /* WebViewController.m in Sources */,
+				A6B938D01B345B21008F86F4 /* SWRevealViewController.m in Sources */,
+				A6FC8C891B10CC7C0002C065 /* ENAFURLConnectionOperation.m in Sources */,
+				A6FC8CD01B10CC7C0002C065 /* NSDataBase64Additions.m in Sources */,
+				A6FC8CA91B10CC7C0002C065 /* EvernoteNoteStore.m in Sources */,
+				A6FC8CC31B10CC7C0002C065 /* ENCredentials.m in Sources */,
+				A6FC8CA71B10CC7C0002C065 /* ENConstants.m in Sources */,
+				A6FC8CA31B10CC7C0002C065 /* EDAMNoteStore.m in Sources */,
+				A6FC8C991B10CC7C0002C065 /* TBinaryProtocol.m in Sources */,
+				A6FC8CAC1B10CC7C0002C065 /* EvernoteUserStore+Extras.m in Sources */,
+				A6FC8CAF1B10CC7C0002C065 /* ENAuthenticationRequest.m in Sources */,
+				A6FC8C8C1B10CC7C0002C065 /* NSData+ENBase64.m in Sources */,
+				A6FC8C8F1B10CC7C0002C065 /* KSWriter.m in Sources */,
+				A6FC8CA01B10CC7C0002C065 /* TTransportException.m in Sources */,
+				A66EABEB18D2AF9B00CDF938 /* AppDelegate.m in Sources */,
+				A6FC8CCD1B10CC7C0002C065 /* NSRegularExpression+ENAGRegex.m in Sources */,
+				A680089D1920FF0A0089B9E5 /* CustomTableViewCell.m in Sources */,
+				A6FC8C9A1B10CC7C0002C065 /* TProtocolException.m in Sources */,
+				A6FC8CCF1B10CC7C0002C065 /* NSData+EvernoteSDK.m in Sources */,
+				A6FC8CB31B10CC7C0002C065 /* ENNoteViewRequest.m in Sources */,
+				A66698A818F92DE3006CD73E /* TableViewController.m in Sources */,
+				A6FC8CCE1B10CC7C0002C065 /* NSString+EDAMAdditions.m in Sources */,
+				A6FC8CC21B10CC7C0002C065 /* ENAPI.m in Sources */,
+				A664C77E1B14BA53005DC88F /* NavigationViewController.m in Sources */,
+				A6FC8CC41B10CC7C0002C065 /* ENCredentialStore.m in Sources */,
+				A6FC8CB21B10CC7C0002C065 /* ENNoteImportRequest.m in Sources */,
+				A6FC8C931B10CC7C0002C065 /* NSString+XMLAdditions.m in Sources */,
+				A6FC8CA51B10CC7C0002C065 /* EDAMUserStore.m in Sources */,
+				A6FC8CC51B10CC7C0002C065 /* ENOAuthViewController.m in Sources */,
+				A6FC8C971B10CC7C0002C065 /* SSKeychain.m in Sources */,
+				A6FC8CCB1B10CC7C0002C065 /* ENXMLDTD.m in Sources */,
+				A6FC8C9F1B10CC7C0002C065 /* TMemoryBuffer.m in Sources */,
+				A6FC8CCA1B10CC7C0002C065 /* ENMLWriter.m in Sources */,
+				A6FC8CAE1B10CC7C0002C065 /* ENApplicationBridge.m in Sources */,
+				A6FC8CC81B10CC7C0002C065 /* ENEncryptedContentInfo.m in Sources */,
+				A6FC8C9C1B10CC7C0002C065 /* TApplicationException.m in Sources */,
+				A66EABE718D2AF9B00CDF938 /* main.m in Sources */,
+				A6FC8CA21B10CC7C0002C065 /* EDAMLimits.m in Sources */,
+				A6FC8CB51B10CC7C0002C065 /* ENSearchRequest.m in Sources */,
+				A6FC8CB01B10CC7C0002C065 /* ENLinkNotebookRequest.m in Sources */,
+				A6FC8CAA1B10CC7C0002C065 /* EvernoteSDK.m in Sources */,
+				A6FC8C8E1B10CC7C0002C065 /* KSHTMLWriter.m in Sources */,
+				A6FC8C911B10CC7C0002C065 /* KSXMLWriter.m in Sources */,
+				A6FC8CCC1B10CC7C0002C065 /* ENXMLWriter.m in Sources */,
+				A6FC8CA11B10CC7C0002C065 /* EDAMErrors.m in Sources */,
+				A6FC8C8D1B10CC7C0002C065 /* KSForwardingWriter.m in Sources */,
+				A6FC8C9E1B10CC7C0002C065 /* THTTPClient.m in Sources */,
+				A6FC8CA61B10CC7C0002C065 /* EDAMNoteStoreClient+Utilities.m in Sources */,
+				A6FC8C901B10CC7C0002C065 /* KSXMLAttributes.m in Sources */,
+				A6FC8CA41B10CC7C0002C065 /* EDAMTypes.m in Sources */,
+				A6FC8CB11B10CC7C0002C065 /* ENNewNoteRequest.m in Sources */,
+				A6FC8C8A1B10CC7C0002C065 /* ENGCOAuth.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66EABF418D2AF9B00CDF938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66EAC0618D2AF9B00CDF938 /* NonestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A66EABFE18D2AF9B00CDF938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A66EABD618D2AF9B00CDF938 /* Nonest */;
+			targetProxy = A66EABFD18D2AF9B00CDF938 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A66EABE318D2AF9B00CDF938 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A66EABE418D2AF9B00CDF938 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A66EABEC18D2AF9B00CDF938 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A66EABED18D2AF9B00CDF938 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A66EAC0218D2AF9B00CDF938 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A66EAC0318D2AF9B00CDF938 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A66EAC0718D2AF9B00CDF938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A66EAC0818D2AF9B00CDF938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A66EAC0A18D2AF9B00CDF938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nonest/Nonest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = "Nonest/Nonest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A66EAC0B18D2AF9B00CDF938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nonest/Nonest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = "Nonest/Nonest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A66EAC0D18D2AF9B00CDF938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Nonest.app/Nonest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nonest/Nonest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NonestTests/NonestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A66EAC0E18D2AF9B00CDF938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Nonest.app/Nonest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nonest/Nonest-Prefix.pch";
+				INFOPLIST_FILE = "NonestTests/NonestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A66EABD218D2AF9B00CDF938 /* Build configuration list for PBXProject "Nonest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A66EAC0718D2AF9B00CDF938 /* Debug */,
+				A66EAC0818D2AF9B00CDF938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A66EAC0918D2AF9B00CDF938 /* Build configuration list for PBXNativeTarget "Nonest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A66EAC0A18D2AF9B00CDF938 /* Debug */,
+				A66EAC0B18D2AF9B00CDF938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A66EAC0C18D2AF9B00CDF938 /* Build configuration list for PBXNativeTarget "NonestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A66EAC0D18D2AF9B00CDF938 /* Debug */,
+				A66EAC0E18D2AF9B00CDF938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A66EABCF18D2AF9B00CDF938 /* Project object */;
+}
