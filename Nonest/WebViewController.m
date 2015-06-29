@@ -7,17 +7,15 @@
 //
 
 #import "WebViewController.h"
-#import "EvernoteUserStore.h"
 #import "EvernoteNoteStore.h"
 #import "ENMLUtility.h"
 
 
 @interface WebViewController ()
 
-@property (nonatomic,assign) NSInteger currentNote;
 @property (nonatomic,strong) UIActivityIndicatorView* activityIndicator;
 @property (nonatomic,strong) NSArray* noteList;
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+
 
 @end
 
@@ -39,28 +37,12 @@
     // Do any additional setup after loading the view.
     
     self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    CGRect viewRect = self.webView.frame;
-    [self.activityIndicator setFrame:CGRectMake(viewRect.size.width/2, viewRect.size.height/2, 20, 20)];
+    //CGRect viewRect = self.webView.frame;
+    [self.activityIndicator setFrame:CGRectMake(150, 150, 20, 20)];
     [self.activityIndicator setHidesWhenStopped:YES];
     [self.webView addSubview:self.activityIndicator];
-    //[self getNote];
-    [self loadCurrentNote];
-}
-
-- (void)appendText:(NSString *)text {
-    self.textView.text = [NSString stringWithFormat:@"%@\n%@", self.textView.text, text];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-- (void) loadCurrentNote {
-    [[self activityIndicator] startAnimating];
-    
+    [self.activityIndicator startAnimating];
+    self.webView.delegate = self;
     if(noteguid != nil){
         [[EvernoteNoteStore noteStore] getNoteWithGuid:noteguid withContent:YES withResourcesData:YES withResourcesRecognition:NO withResourcesAlternateData:NO success:^(EDAMNote *note) {
             ENMLUtility *utltility = [[ENMLUtility alloc] init];
@@ -68,6 +50,7 @@
                 if(error == nil) {
                     [self.webView loadHTMLString:html baseURL:nil];
                     [[self activityIndicator] stopAnimating];
+                    
                 }
             }];
         } failure:^(NSError *error) {
@@ -77,6 +60,36 @@
     }
     
 }
+
+    //webviewを読み込んだ後に実行される
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    //画像をデバイスに合ったレイアウトに変える
+    NSString *css = @"img{max-width: 100%;} *{height:auto;}";
+    
+    // 追加適用するCSSを適用する為の
+    // JavaScriptを作成します。
+    NSMutableString *javascript = [NSMutableString string];
+    [javascript appendString:@"var style = document.createElement('style');"];
+    [javascript appendString:@"style.type = 'text/css';"];
+    [javascript appendFormat:@"var cssContent = document.createTextNode('%@');", css];
+    [javascript appendString:@"style.appendChild(cssContent);"];
+    [javascript appendString:@"document.body.appendChild(style);"];
+    
+    
+    // JavaScriptを実行します。
+    [webView stringByEvaluatingJavaScriptFromString:javascript];
+
+}
+
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
 
 
 @end

@@ -17,7 +17,7 @@ static NSString * const TableViewCustomCellIdentifier = @"CustomCell";
     NSString* sharedId;
 }
 
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
 
 @property (weak,nonatomic) IBOutlet UIBarButtonItem *barButton;
 

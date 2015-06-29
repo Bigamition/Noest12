@@ -26,7 +26,7 @@
     
     //navigationbar color custom
     [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:0.349 green:1.000 blue:0.847 alpha:1.000];
-    [UINavigationBar appearance].tintColor = [UIColor colorWithRed:1.000 green:1.000 blue:1.000 alpha:1.000];
+    [UINavigationBar appearance].tintColor = [UIColor colorWithRed:0.996 green:0.996 blue:0.996 alpha:1.0];
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor colorWithRed:1.000 green:1.000 blue:1.000 alpha:1.000]};
     //navigationbar 1px ボーダー　消す
     [[UINavigationBar appearance] setBackgroundImage: [self imageWithColor: [UIColor colorWithRed:0.349 green:1.000 blue:0.847 alpha:1.000]]
@@ -54,12 +54,6 @@
     
     return __image;
 }
-
-
-
-
-
-
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {

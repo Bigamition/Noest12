@@ -17,13 +17,14 @@
 @property (nonatomic,strong) UIActivityIndicatorView* activityIndicator;
 @property (nonatomic,strong) NSMutableArray* section1;
 @property (nonatomic,strong) NSMutableArray* section2;
-@property (nonatomic,strong) NSMutableArray* section3;
+
+
 
 @end
 
 @implementation NavigationViewController
 
-@synthesize section1,section2,section3;
+@synthesize section1,section2;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,18 +38,35 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
-    
+    EvernoteSession *session = [EvernoteSession sharedSession];
+    if (session.isAuthenticated) {
+        [self listNotes];
+        [self listTags];
+    }
     self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    [self listNotes];
-    [self listTags];
+}
+
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if (self.section1 == NULL) {
+        [self listNotes];
+        [self listTags];
+    }
+    
+    
+    
+}
+
+- (void)viewDidUnload {
+    
+    [super viewDidUnload];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    
+    // Dispose of any resources that can be recreated.
 }
 
 - (BOOL)prefersStatusBarHidden {
@@ -66,7 +84,6 @@
     EvernoteNoteStore *noteStore = [EvernoteNoteStore noteStore];
     [self.activityIndicator startAnimating];
     [noteStore listNotebooksWithSuccess:^(NSArray *notebooks) {
-
         [self.activityIndicator stopAnimating];
         self.notebooks = notebooks;
         //NSArrayではNSMutableArrayを使うことで可変になり繰り返しで連結が可能になる
@@ -75,11 +92,6 @@
             [self.section1 addObject:notebook.name];
             
         }
-        
-        
-        
-        //[self.tableView reloadData];
-        //[self performSegueWithIdentifier:@"ShowNotebookTableView" sender:nil];
         
     } failure:^(NSError *error) {
         NSLog(@"error %@", error);
@@ -98,10 +110,11 @@
         }
         //アルファベット順
         self.sortedArray = [self.section2 sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-        //NSLog(@"taaaaaaaaaaaaaaaaaaaaaaaaaaaaaag %@", self.sortTags);
+        [self.tableView reloadData];
     } failure:^(NSError *error) {
         NSLog(@"error %@", error);
     }];
+
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -114,9 +127,9 @@
     if (section == 0) {
         count = 1;
     }else if (section == 1) {
-        count = self.section1.count;
+        count = (int)[self.section1 count];
     }else if (section == 2) {
-        count = self.section2.count;
+        count = (int)[self.section2 count];
     }
     return count;
     
@@ -140,21 +153,47 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UILabel *sectitle = [UILabel new];
-    sectitle.backgroundColor = [UIColor colorWithRed:0.349 green:1.000 blue:0.847 alpha:1.000];
-    sectitle.font = [UIFont systemFontOfSize:13];
-    sectitle.textColor = [UIColor whiteColor];
+    UIView *sectitle  = [[UIView alloc] init];
+    UILabel *label1 = [[UILabel alloc] init];
+    //frameを設定しないと表示されない
+    label1.frame = CGRectMake(0, 0, 280, 25);
+    label1.backgroundColor = [UIColor colorWithRed:0.349 green:1.000 blue:0.847 alpha:1.000];
+    label1.font = [UIFont systemFontOfSize:13];
+    label1.textColor = [UIColor whiteColor];
     if (section == 0) {
-        sectitle.backgroundColor = [UIColor whiteColor];
-        sectitle.font = [UIFont systemFontOfSize:18];
-        sectitle.textColor = [UIColor colorWithRed:0.349 green:1.000 blue:0.847 alpha:1.000];
-        sectitle.text = [NSString stringWithFormat:@" Evernote"];
+        //ユーザー名取得
+        EvernoteUserStore *userStore = [EvernoteUserStore userStore];
+        [self.activityIndicator startAnimating];
+        [userStore getUserWithSuccess:^(EDAMUser *user) {
+            label1.frame = CGRectMake(0, 0, 100, 20);
+            label1.backgroundColor = [UIColor whiteColor];
+            label1.font = [UIFont systemFontOfSize:18];
+            label1.textColor = [UIColor colorWithRed:0.349 green:1.000 blue:0.847 alpha:1.000];
+            label1.text = [NSString stringWithFormat:@" %@", user.username];
+            [sectitle addSubview:label1];
+        } failure:^(NSError *error) {
+            NSLog(@"error %@", error);
+        }];
+        
+        UIButton *button1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        button1.frame = CGRectMake(200, 7, 50, 13);
+        button1.titleLabel.font = [UIFont systemFontOfSize: 13];
+        //button1.backgroundColor = [UIColor colorWithRed:0.349 green:1.000 blue:0.847 alpha:1.000];
+        button1.layer.cornerRadius = 3;
+        [button1 setTitle:@"Logout" forState:UIControlStateNormal];
+        [button1 setTitleColor:[UIColor colorWithRed:0.784 green:0.780 blue:0.800 alpha:1.000] forState:UIControlStateNormal];
+        [button1 setTitleColor:[UIColor colorWithRed:0.549 green:1.000 blue:0.947 alpha:1.000] forState:UIControlStateHighlighted];
+        [button1 addTarget:self action:@selector(buttonDidPush) forControlEvents:UIControlEventTouchUpInside];
+        [sectitle addSubview:button1];
     }else if (section == 1) {
-        sectitle.text = [NSString stringWithFormat:@" Notebooks"];
+        label1.text = [NSString stringWithFormat:@" Notebooks"];
+        [sectitle addSubview:label1];
     }else if (section == 2) {
-        sectitle.text = [NSString stringWithFormat:@" Tags"];
+        label1.text = [NSString stringWithFormat:@" Tags"];
+        [sectitle addSubview:label1];
     }
     
+
     return sectitle;
 }
 
@@ -175,6 +214,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
         separatorLineView.backgroundColor =[UIColor colorWithRed:0.349 green:1.000 blue:0.847 alpha:1.000];
         [cell.contentView addSubview:separatorLineView];
         [[cell textLabel] setText:@"All Notes"];
+        
     }else if (indexPath.section == 1) {
         EDAMNotebook* notebook = self.notebooks[indexPath.row];
         [[cell textLabel] setText:notebook.name];
@@ -214,12 +254,27 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
             vc.notebooktitle = notebook.name;
         }else if (indexPath.section == 2) {
             TableViewController *vc = /*(WebViewController*)*/[segue destinationViewController];
-            EDAMNotebook* Tags = self.Tags[indexPath.row];
-            vc.Tagstitle = Tags.name;
+            NSString* Tagname = self.sortedArray[indexPath.row];
+            vc.Tagstitle = Tagname;
             NSMutableArray *anArray = [[NSMutableArray alloc] init];
-            [anArray addObject:Tags.guid];
+            EvernoteNoteStore *noteStore = [EvernoteNoteStore noteStore];
+            [self.activityIndicator startAnimating];
+            [noteStore listTagsWithSuccess:^(NSArray *Tags) {
+                [self.activityIndicator stopAnimating];
+                self.Tags = [Tags mutableCopy];
+                for ( EDAMNotebook* Tag in Tags ) {
+                    if ([Tag.name isEqualToString:Tagname]) {
+                        [anArray addObject:Tag.guid];
+                        break;
+                        
+                    }
+                    
+                }
+                
+            } failure:^(NSError *error) {
+                NSLog(@"error %@", error);
+            }];
             vc.Tagsguid = anArray;
-           
             
         }
         
@@ -229,6 +284,49 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     
     
+    
+}
+
+- (void)buttonDidPush{
+    //このメソッドがコールされる
+    UIAlertView *alert =
+    [[UIAlertView alloc] initWithTitle:nil message:@"Are you sure you want to logout？"
+                              delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"YES", nil];
+    [alert show];
+    
+
+    NSLog(@"buttonPush");
+}
+
+-(void)alertView:(UIAlertView*)alertView
+clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    switch (buttonIndex) {
+        case 0:
+            //１番目のボタンが押されたときの処理を記述する
+            break;
+        case 1:
+            //２番目のボタンが押されたときの処理を記述する
+            [[EvernoteSession sharedSession] logout];
+            EvernoteSession *session = [EvernoteSession sharedSession];
+            [session authenticateWithViewController:self completionHandler:^(NSError *error) {
+                if (error || !session.isAuthenticated) {
+                    NSLog(@"Error : %@",error);
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                    message:@"Could not authenticate"
+                                                                   delegate:nil
+                                                          cancelButtonTitle:@"OK"
+                                                          otherButtonTitles:nil];
+                    [alert show];
+                    
+                } else {
+                    
+                    NSLog(@"authenticated! noteStoreUrl:%@ webApiUrlPrefix:%@", session.noteStoreUrl, session.webApiUrlPrefix);
+                    
+                }
+            }];
+            break;
+    }
     
 }
 
